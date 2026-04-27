@@ -7,10 +7,10 @@ public class Next_Greatest_Element {
         int n = arr.length;
 
         int[] result = new int[n];
-
+        System.out.println("hello");
 
         for (int i = 0; i < n; i++) {
-int max = -1;
+         int max = -1;
             for(int j = i+1; j<n; j++){
 
                 if(arr[j] > arr[i]) {
@@ -20,14 +20,7 @@ int max = -1;
                     break;
 
                 }
-
-
-
-
             }
-
-
-
                 result[i] = max;
 
         }
