@@ -1,0 +1,37 @@
+short notes--
+
+1. git is a software and git_hub is its service.
+
+2.Process Workflow--
+
+   a.Check git status (shows the current status).
+
+   b.run git init (you will be inside working directory).
+
+   c.run git add to add files into the staging area
+     you can add specific files or directly add all files by .
+
+     Staging area basically means you are still deciding which changes
+     you want to make permanent without making them prior.
+
+   d.Now run git commit -m "Type Message Here"
+     -m is very important.
+
+   e.Now your Repository is created with the files in it.
+
+   f.git log is used to see the changes details to you repository
+
+     you can also use flags like git log --oneline to read changes quickly
+     in one lines.
+
+   g.git default online editor bhi change kar sakte he it is use for ki like
+     commit karte time if you forget to write -m then it does not save the changes
+     so it will wait for you in a git file to make changes or write your message.
+
+   h.git ignore isliye use kiya jata he ki like mujhe repo me aisi chize ya files
+      rakhna he jinko me track nhi karna chahta to .gitignore nam ki file bana sakta
+      hu and usko add and commit bhi kar skata hu.
+
+   i.git keep nam ki file bhi bana sakte he agar manlo mere project me koi aisi file he
+     jo abhi to empty he but usme future me data aa sakta he to me usko gitkeep naam se
+     bhi bana sakta hu.
