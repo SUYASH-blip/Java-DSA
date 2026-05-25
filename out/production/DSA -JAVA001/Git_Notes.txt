@@ -19,7 +19,7 @@ short notes--
 
    e.Now your Repository is created with the files in it.
 
-   f.git log is used to see the changes details to you repository
+   f.git log is used to see the changes made to your repository.
 
      you can also use flags like git log --oneline to read changes quickly
      in one lines.
@@ -35,3 +35,55 @@ short notes--
    i.git keep nam ki file bhi bana sakte he agar manlo mere project me koi aisi file he
      jo abhi to empty he but usme future me data aa sakta he to me usko gitkeep naam se
      bhi bana sakta hu.
+
+   j.git branches are used to work on alternate
+     versions of the same project and changes in one branch
+     does not affect the main master branch until we merge the changes
+     manually.
+
+   k.Head is a pointer which points to the current working branch.
+
+     Commands:
+          1.git branch: To check in which branch we are currently on.
+
+          2.git branch bug-fix : Basically this command is used to create a new branch
+            with the name of our choice . Here bug-fix is the new branch name.
+            It does not switches to that newly generated branch just creates it.
+
+          3.git switch bug-fix: Used to switch to the tha specified branch
+            name can be anything here we are using an example.
+
+          4.git switch -c dark-mode : This command not only creates
+            a new branch of the given name but also switches to it automatically.
+            Again here dark-mode is a name only you can take any name of your choice.
+
+          5.git checkout orange-mode : This command only checks wether the given name
+            branch exists or not
+
+          6.Use cmd+9 to open git tab in intellij same as git graph in the vscode.
+            it is a very useful tool its features are :
+
+               1.checkout Revision koi bhi commit pe right click karke dekh
+                 sakte he ye uska past version dikhata he and try to avoid
+                 doing changes to it kyuki vo add nhi hote.
+
+
+
+
+
+
+
+
+
+
+          7.Merging of branches 2 Types:-
+
+
+             7.1 Fast Forward merge :- When there is no change in the main
+                 Branch but changes are done in the new branch
+                 we can simply write " git merge bug-fix"
+                 Note:- Use this command in the branch in which you want to merge
+                 the new one .
+
+             7.2 Not So Fast Forward merge :- When there are changes in both the
+                 Branches               
