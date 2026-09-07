@@ -1,14 +1,8 @@
 package Arrays;
 import java.util.*;
 
-
-
-
-
     public class RotateWithoutExtraArray {
         public static void reverse(int[] arr, int i, int j) {
-
-
 
             while(i<j){
                int temp = arr[i];
@@ -18,8 +12,6 @@ import java.util.*;
                 j--;
 
             }
-
-
         }
 
         public static void main(String[] args) {
@@ -33,12 +25,6 @@ Scanner sc = new Scanner(System.in);
             reverse(arr,n-k,n-1);
             reverse(arr,0,n-1);
             System.out.println("Array after K steps rotation:"+Arrays.toString(arr));
-
-
-
-
-
-
         }
     }
 

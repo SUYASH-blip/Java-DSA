@@ -18,14 +18,12 @@ public class Merge_Two_Sorted_Arrays {
             if(arr[i]<=nums[j]){
                 result[k] = arr[i];
                 i++;
-                k++;
             }
             else {
                 result[k]=nums[j];
                 j++;
-                k++;
-
             }
+            k++;
 
         }
 
