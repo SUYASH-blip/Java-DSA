@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.TwoPointers;
 import java.util.Arrays;
 
 public class Merge_Two_Sorted_Arrays {

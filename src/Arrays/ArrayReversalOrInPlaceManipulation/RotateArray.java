@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.ArrayReversalOrInPlaceManipulation;
 import java.util.Arrays;
 import java.util.Scanner;
 

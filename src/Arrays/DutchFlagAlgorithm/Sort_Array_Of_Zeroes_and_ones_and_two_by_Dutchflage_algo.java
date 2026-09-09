@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.DutchFlagAlgorithm;
 import java.util.Arrays;
 
 public class Sort_Array_Of_Zeroes_and_ones_and_two_by_Dutchflage_algo {

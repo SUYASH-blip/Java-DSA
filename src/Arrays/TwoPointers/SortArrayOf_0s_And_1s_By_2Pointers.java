@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.TwoPointers;
 import java.util.Arrays;
 
 public class SortArrayOf_0s_And_1s_By_2Pointers {

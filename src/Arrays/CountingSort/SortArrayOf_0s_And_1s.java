@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.CountingSort;
 import java.util.Arrays;
 
 public class SortArrayOf_0s_And_1s {
