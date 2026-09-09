@@ -37,10 +37,6 @@ public class TwoSum {
 
         for (int i = 0; i < nums.length; i++) {
 
-            if (nums[i] > target) {
-                continue;
-            }
-
             compliment = target - nums[i];
 
             if (cache.containsKey(compliment)) {
