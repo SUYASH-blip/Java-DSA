@@ -7,21 +7,20 @@ public class practice1 {
     public static void main(String[] args) {
 
 
-        int[] arr = {12,13,1,15,99,101,45};
+        int[] arr = {0,1,0,3,12};
         int[] result = new int[arr.length];
+        int k = 0;
 
         for(int i = 0 ; i < arr.length; i ++){
-            int max = -1;
-            for (int j = i+1; j < arr.length ; j++) {
-                if(arr[j]>arr[i]){
-                    max = arr[j];
-                    break;
-                }
 
+            if(arr[i]!=0) {
+                result[k] = arr[i];
+                k++;
             }
-            result[i] = max;
+
         }
         System.out.println(Arrays.toString(result));
+
 
 
     }
