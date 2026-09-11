@@ -16,11 +16,11 @@ public class SortArrayOf_0s_And_1s_By_2Pointers {
                 arr[end]=temp;
                 start++;
                 end--;}
-else if(arr[start]==0){
+           else if(arr[start]==0){
                     start++;
                 }
-else if(arr[end]==1){
-    end--;
+           else if(arr[end]==1){
+               end--;
                 }
 
             }
