@@ -17,23 +17,18 @@ public class Sort_Array_Of_Zeroes_and_ones_and_two_by_Dutchflage_algo {
 
       while(mid<=high){
 
-            if(mid>high){
-                break;
-            }
-
-            if(arr[mid] ==0 ){
+            if(arr[mid] == 0){
             swap(arr,mid,Low);
                 mid++;
                 Low++;
             }
 
-       else     if(arr[mid] ==1){
+            else if(arr[mid] ==1){
                 mid++;
             }
 
-        else    if(arr[mid] == 2){
+            else if(arr[mid] == 2){
                swap(arr,mid,high);
-
                 high--;
             }
         }

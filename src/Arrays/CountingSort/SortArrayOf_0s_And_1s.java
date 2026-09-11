@@ -5,7 +5,7 @@ public class SortArrayOf_0s_And_1s {
     public static void main(String[] args) {
         int[] arr = {1,0,0,1,1,0,0,0,1,0};
         int no_of_zeroes = 0;
-       for(int i =0; i < arr.length; i++){
+        for(int i =0; i < arr.length; i++){
            if(arr[i]==0){
                no_of_zeroes+=1;
            }
