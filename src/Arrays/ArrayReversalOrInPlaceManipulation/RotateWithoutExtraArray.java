@@ -10,7 +10,6 @@ import java.util.*;
                 arr[j] = temp;
                 i++;
                 j--;
-
             }
         }
 

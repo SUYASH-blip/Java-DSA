@@ -4,6 +4,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class practice1 {
+
+    public static void reverse(int[] arr , int i , int j ){
+        while(i<j){
+            int temp = arr[j];
+            arr[j] = arr[i];
+            arr[i] = temp;
+            i++;
+            j--;
+        }
+    }
     public static void swap(int[] arr,int i,int j){
         int temp = arr[i];
         arr[i] = arr[j];
@@ -11,30 +21,21 @@ public class practice1 {
     }
     public static void main(String[] args) {
 
-
-        int[] arr = {0,1,0,1,0,2,2,0,1,0,2,1,0,0};
-
-        int low=0;
-        int mid=0;
-        int high = arr.length-1;
-
-        while(mid<=high){
-          if(arr[mid]==0){
-              swap(arr,mid,low);
-              mid++;
-              low++;
-          }
-          else if (arr[mid]==1){
-              mid++;
-          }
-          else if(arr[mid]==2){
-              swap(arr,mid,high);
-              high--;
-          }
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {1,2,3,4,5,6,7,8,9,10};
+        int n = arr .length;
+        int k = sc.nextInt();
+        k = k % n;
+        reverse(arr,0,n-k-1);
+        reverse(arr,n-k,n-1);
+        reverse(arr,0,n-1);
 
 
-        }
+
+
         System.out.println(Arrays.toString(arr));
+
+
 
 
 
