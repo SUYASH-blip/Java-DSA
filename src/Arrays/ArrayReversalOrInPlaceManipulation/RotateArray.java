@@ -9,15 +9,14 @@ public class RotateArray {
         int n = a.length;
         System.out.println("Tell how many times you want to rotate the array:");
         int k = sc.nextInt();
-
         int temp =1;
-
         int[] b = new int[9];
+
+
         for(int i =0; i<n; i++){
             if(i<k){
                 b[i] = a[n-temp];
                 temp++;
-
             }
             if(i>=k){
                 b[i] = a[i-k];

@@ -34,15 +34,6 @@ public class practice1 {
 
 
         System.out.println(Arrays.toString(arr));
-
-
-
-
-
-
-
-
-
     }
 
 }
