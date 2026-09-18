@@ -3,7 +3,7 @@ package Arrays.PrefixSum;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CountSubArrays_Divide {
+public class SubarraySumDivisibleByK {
     public static int count_subarrays(int[] nums){
         int n = nums.length;
         int running_sum = 0;
