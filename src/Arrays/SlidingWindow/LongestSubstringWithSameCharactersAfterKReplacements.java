@@ -14,7 +14,7 @@ public class LongestSubstringWithSameCharactersAfterKReplacements {
         String s = "aaabc";
         char[] ch = s.toCharArray();
         int n = ch.length;
-        int[] freq = new int[255];
+        int[] freq = new int[256];
         int x = 0;
         int k = 1;
         int n2 = freq.length;
