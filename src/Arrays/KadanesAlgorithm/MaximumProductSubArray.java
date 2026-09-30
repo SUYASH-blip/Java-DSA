@@ -13,8 +13,9 @@ public class MaximumProductSubArray {
 
         tempMax = Math.max(nums[i],Math.max(max*nums[i],min*nums[i]));
         tempMin = Math.min(nums[i],Math.max(max*nums[i],min*nums[i]));
-        max = tempMax;
+
         min = tempMin;
+        max = tempMax;
         ans = Math.max(ans,max);
         }
         System.out.println(ans);
