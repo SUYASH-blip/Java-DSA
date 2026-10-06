@@ -12,7 +12,7 @@ public class MaximumProductSubArray {
         for(int i = 1; i < n ; i++){
 
         tempMax = Math.max(nums[i],Math.max(max*nums[i],min*nums[i]));
-        tempMin = Math.min(nums[i],Math.max(max*nums[i],min*nums[i]));
+        tempMin = Math.min(nums[i],Math.min(max*nums[i],min*nums[i]));
 
         min = tempMin;
         max = tempMax;

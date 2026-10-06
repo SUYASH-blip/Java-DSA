@@ -10,11 +10,8 @@ public class MaximumAbsoluteSumSubarray {
         int ans = Math.abs(nums[0]);
         for(int i = 1; i < n ; i++){
 
-            max  = Math.max(nums[i],Math.max(max+nums[i],min+nums[i]));
-
-            min = Math.min(nums[i],Math.max(max+nums[i],min+nums[i]));
-
-
+            max  = Math.max(nums[i],max+nums[i]);
+            min = Math.min(nums[i],min+nums[i]);
             ans = Math.max(ans,Math.max(max,Math.abs(min)));
         }
         System.out.println(ans);

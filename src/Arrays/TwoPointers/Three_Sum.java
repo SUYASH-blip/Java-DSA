@@ -12,6 +12,10 @@ public class Three_Sum {
     public static List<List<Integer>> three_sum(int[] nums, int n) {
         List<List<Integer>> result = new ArrayList<>();
         for (int i = 0; i < n - 2; i++) {
+            while(i>0 && nums[i]==nums[i-1]){
+                continue;
+            }
+
             int left = i + 1;
             int right = n - 1;
             while (left < right) {
@@ -21,7 +25,13 @@ public class Three_Sum {
                     left++;
                     right--;
                 }
-                else if(sum>0){
+                while(left<right&&nums[left]==nums[left-1]){
+                    left++;
+                }
+                while(left<right&&nums[right]==nums[right+1]){
+                    right--;
+                }
+                 if(sum>0){
                     right--;
                 }
                 else {

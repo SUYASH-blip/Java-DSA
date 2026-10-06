@@ -31,11 +31,12 @@ public class LongestSubstringWithSameCharactersAfterKReplacements {
             int diff = length - max_freq;
             while(diff > k){
                 freq[ch[low]]--;
-                low = low+1;
+                low++;
                 max_freq = max(freq);
                 length = high - low + 1;
                 diff = length-max_freq;
             }
+            System.out.println(diff);
             if(length>result){
                 result = length;
             }

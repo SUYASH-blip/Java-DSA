@@ -8,7 +8,7 @@ public class LongestSubStringWithKDistinctElement {
 
     public static int longestKSubstr(String s, int k) {
         Map<Character,Integer> map = new HashMap<>();
-        int length = 0;
+
         int low = 0;
         int result = -1;
         char[] ch = s.toCharArray();
@@ -19,11 +19,11 @@ public class LongestSubStringWithKDistinctElement {
             char temp = ch[high];
             if(map.containsKey(temp)){
                 map.put(temp,map.get(temp)+1);
-                length++;
+
             }
             else{
                 map.put(temp,1);
-                length++;
+
             }
             while(map.size()>k){
                 char y = ch[low];
@@ -35,10 +35,10 @@ public class LongestSubStringWithKDistinctElement {
                     map.put(y,frequency-1);
                 }
                 low++;
-                length--;
+
             }
             if(map.size()==k){
-                result = Math.max(result,length);
+                result = Math.max(result,high-low+1);
             }
         }
         return result;
