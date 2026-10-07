@@ -17,14 +17,11 @@ public class InsertionSort {
         for (int i = 1; i < n ; i++) {
 
 
-            for(int j = i ; j >= 1; j--){
-                if(arr[j]<arr[j-1]){
-                    swap(arr,j,j-1);
-                }
+            for(int j = i ; j >= 1 && arr[j]<arr[j-1]; j--){
 
-               else{
-                   break;
-                }
+                    swap(arr,j,j-1);
+
+
             }
         }
         System.out.println(Arrays.toString(arr));
