@@ -7,13 +7,11 @@ public class SelectionSort {
     static void main() {
         int[] arr = {2, 5, 6, 8, 9, 0};
         int n = arr.length;
-
-
         int temp = 0;
         int min_index = 0;
         int k = 0;
 
-        for (int x = 0; x < n - 1; x++) {
+        for (int x = 0; x < n ; x++) {
             int min = Integer.MAX_VALUE;
 
             for(int i = k ; i <= n-1; i++){
