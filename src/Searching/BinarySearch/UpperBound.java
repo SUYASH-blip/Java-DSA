@@ -1,6 +1,6 @@
 package Searching.BinarySearch;
 
-public class LowerBound {
+public class UpperBound {
     static void main() {
         int[] arr = {10,20,30,40,50,60,70};
         int n = arr.length;
@@ -11,7 +11,7 @@ public class LowerBound {
         int lowerBound = n;
         while(low<=high){
             int mid = low + (high-low)/2;
-            if(arr[mid]>= target){
+            if(arr[mid]> target){
                 lowerBound = Math.min(lowerBound,mid);
                 high = mid-1;
             }
@@ -21,6 +21,5 @@ public class LowerBound {
 
         }
         System.out.println(lowerBound);
-
     }
 }
