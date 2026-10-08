@@ -6,18 +6,21 @@ public class BinarySearch {
         boolean flag  = false;
         int mid ;
 
-        while(low<high){
+        while(low<=high){
             mid = (low+high)/2;
 
-            if(mid == key){
+            if(nums[mid] == key){
                 flag = true;
                 break;
+
             }
-            else if(mid<key){
-               return BinarySearch(nums,mid+1,high,key);
+            else if(nums[mid]<key){
+               flag =  BinarySearch(nums,mid+1,high,key);
+               break;
             }
-            else if(mid>key){
-                return BinarySearch(nums,low,mid-1,key);
+            else if(nums[mid]>key){
+                flag = BinarySearch(nums,low,mid-1,key);
+                break;
             }
 
         }
